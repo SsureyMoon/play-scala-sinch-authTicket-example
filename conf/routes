@@ -1,0 +1,4 @@
+GET   /		                           controllers.Application.webchat
+POST  /makecall                        controllers.Application.makecall
+
+GET   /assets/*file                    controllers.Assets.at(path="/public", file)

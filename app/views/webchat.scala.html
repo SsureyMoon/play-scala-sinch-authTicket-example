@@ -1,0 +1,41 @@
+@(app_key: String)
+
+@import helper._
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sinch Ticket Generate</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q.js"></script>
+    <script src="//cdn.sinch.com/latest/sinch.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>var app_key = '@app_key'</script>
+
+    <script src="@routes.Assets.at("js/sinchCtrl.js")"></script>
+
+</head>
+
+<body>
+  <section id="call-now" class="container content-section text-center">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+              <button id="call-now" class="btn btn-default">Call Now!</button>
+          </div>
+      </div>
+      <br>
+      <div id="message"></div>
+  </section>
+</body>
